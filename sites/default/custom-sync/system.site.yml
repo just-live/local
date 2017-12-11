@@ -1,0 +1,14 @@
+uuid: b08ad5e9-1c1f-4ca1-b0c3-cd811161280b
+name: local
+mail: hamuzi99.ht@hotmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
