@@ -7,8 +7,11 @@ dependencies:
     - field.field.node.customer.field_address
     - field.field.node.customer.field_full_name_
     - field.field.node.customer.field_mobile_no_
+    - field.field.node.customer.field_photo
+    - image.style.thumbnail
     - node.type.customer
   module:
+    - image
     - path
     - text
 id: node.customer.default
@@ -54,6 +57,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_photo:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   path:
     type: path
