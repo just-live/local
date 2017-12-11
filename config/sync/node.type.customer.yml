@@ -1,0 +1,18 @@
+uuid: 9f331d65-5c88-46b7-9358-e171def8c01e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Customer
+type: customer
+description: 'creating customer information'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,22 @@
+uuid: 4eee70d3-7a2f-4d75-8a95-bf824e8186bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.customer
+  module:
+    - text
+id: node.customer.body
+field_name: body
+entity_type: node
+bundle: customer
+label: 'Other '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

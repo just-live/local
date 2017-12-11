@@ -1,0 +1,55 @@
+uuid: 930b4b45-8ba1-4bcf-9861-97ebafd76aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.customer.body
+    - field.field.node.customer.field_address
+    - field.field.node.customer.field_full_name_
+    - field.field.node.customer.field_mobile_no_
+    - node.type.customer
+  module:
+    - text
+    - user
+id: node.customer.default
+targetEntityType: node
+bundle: customer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_full_name_:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mobile_no_:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
