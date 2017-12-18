@@ -1,0 +1,14 @@
+uuid: 6a762272-bbf3-4487-aa74-23b2353ef46c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - my_vocabulary
+_core:
+  default_config_hash: ZDA7C8NH_UjgzWJm_QgqVdZdk9aQX9XTFVKXBvJZNQU
+name: gender
+vid: gender
+description: 'Stores the gender for my_vocabulary'
+hierarchy: 0
+weight: 0

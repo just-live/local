@@ -1,0 +1,55 @@
+<?php
+
+// Put the following line in the top of the .install file:
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ */
+function my_vocabulary_install(){
+	create_tax();
+}
+
+
+/**
+ * Implements hook_uninstall().
+ */
+function my_vocabulary_uninstall() {
+	delete_tax();
+}
+
+function my_vocabulary_update_8001() {
+	create_tax();
+}
+
+/**
+ * Add some terms to the Category vocabulary.
+ */
+function create_tax() {
+  // Machine name of the Taxonomy vocabulary.
+  $vocab = 'gender';
+
+  // Term names to be added.
+  $items = [
+    'Male',
+    'Female',
+    'Other',
+  ];
+  foreach ($items as $item) {
+    $term = Term::create(array(
+      'parent' => array(),
+      'name' => $item,
+      'vid' => $vocab,
+    ))->save();
+  }
+}
+
+function delete_tax(){
+	  $tids = \Drupal::entityQuery('taxonomy_term')
+    ->condition('vid', 'gender')
+    ->execute();
+
+  $controller = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+  $entities = $controller->loadMultiple($tids);
+  $controller->delete($entities);
+}

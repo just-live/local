@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - my_vocabulary
+name: gender
+vid: gender
+description: 'Stores the gender for my_vocabulary'
+hierarchy: 0
+weight: 0

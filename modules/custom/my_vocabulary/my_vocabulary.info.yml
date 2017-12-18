@@ -1,0 +1,7 @@
+name: Hamza Taxonomy
+type: module
+core: 8.x
+package: Other
+description: "Taxonomy created for test"
+dependencies:
+  - taxonomy

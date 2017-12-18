@@ -1,0 +1,4 @@
+name: 'my_module'
+type: module
+description: 'this is a test module.'
+core: '8.x'

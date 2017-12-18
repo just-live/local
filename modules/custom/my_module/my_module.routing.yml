@@ -1,0 +1,20 @@
+example.content:
+  path: '/my_module' 
+  defaults: 
+    _controller: '\Drupal\my_module\Controller\MymoduleController::test' 
+  requirements: 
+    _permission: 'access content' 
+
+my_module.page2:
+  path: '/page2/{id}' 
+  defaults: 
+    _controller: '\Drupal\my_module\Controller\MymoduleController::page2' 
+  requirements: 
+    _permission: 'access content'    
+
+# my_module.employe:
+#   path: '/allemployees' 
+#   defaults: 
+#     _controller: '\Drupal\my_module\Controller\MymoduleController::employees' 
+#   requirements: 
+#     _permission: 'access content' 
