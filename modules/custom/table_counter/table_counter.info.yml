@@ -1,0 +1,8 @@
+name: counter table
+type: module
+description: 'It count a value added in a field'
+package: Tables
+core: 8.x
+dependencies:
+  - drupal:node
+  - drupal:user

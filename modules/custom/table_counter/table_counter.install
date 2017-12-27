@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the table_counter module.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ *
+ * @see hook_install()
+ *
+ */
+function table_counter_install() {
+
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ */
+function table_counter_schema() {
+  $schema['table_counter'] = [
+    'description' => 'It count an inserted value in a field.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique.',
+      ],
+      'counter' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'tiny',
+        'description' => 'field for insterting a value to add.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'counter' => ['counter'],
+    ],
+  ];
+
+  return $schema;
+}

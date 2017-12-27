@@ -12,9 +12,19 @@ my_module.page2:
   requirements: 
     _permission: 'access content'    
 
-# my_module.employe:
-#   path: '/allemployees' 
-#   defaults: 
-#     _controller: '\Drupal\my_module\Controller\MymoduleController::employees' 
-#   requirements: 
-#     _permission: 'access content' 
+
+my_module.counter:
+  path: '/counter' 
+  defaults: 
+    _controller: '\Drupal\my_module\Controller\MymoduleController::counter'
+    _title: 'counter' 
+  requirements: 
+    _permission: 'access content' 
+
+my_module.form:
+  path: '/counter_form'
+  defaults:
+    _title: 'Counter form'
+    _form: '\Drupal\my_module\Form\CounterForm'
+  requirements:
+    _permission: 'access content'    
