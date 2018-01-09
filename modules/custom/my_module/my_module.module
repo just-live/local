@@ -1,6 +1,7 @@
 <?php
 function my_module_theme($existing, $type, $theme, $path) {
   return [
+  	
     'counter1' => [
       'variables' => ['content' => NULL, 'test'=> 'from hook'],
     ],

@@ -1,0 +1,10 @@
+counter-form-style:
+  version: 1.x
+  css:
+    layout:
+      css/counter.css: {}
+  js:
+    js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

@@ -30,19 +30,22 @@ $query = \Drupal::database()->select('table_counter', 't');
 $query->fields('t', ['id', 'counter']);
 $result = $query->execute();
 while ($row = $result->fetchAssoc()) {
-	array_push($data, [
-		'id' => $row['id'],
-		'counter' => $row['counter']
-	]);  
+
+	array_push($data, ['id' => $row['id'],'counter' => $row['counter']]);  
 }
     
     $output = array(
       '#theme' => 'counter1',
+      '#attached' => array(
+            'library' =>  array(
+                'my_module/counter-form-style',
+            ),
+        ),
       '#content' => [
       	'data' => $data,
         'form' => \Drupal::formBuilder()->getForm('Drupal\my_module\Form\CounterForm'),
       ],
-      '#test' => 'from ctrl'
+       '#test' => 'from ctrl'
     );
     return $output;
 }

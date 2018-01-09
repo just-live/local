@@ -39,7 +39,7 @@ class CounterForm extends FormBase {
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     if (strlen($form_state->getValue('count_number')) < 1) {
-      $form_state->setErrorByName('phone_number', $this->t('The number is too short. Please enter again.'));
+      $form_state->setErrorByName('counter', $this->t('The number is too short. Please enter again.'));
     }
   }
 
