@@ -1,0 +1,17 @@
+name: Classic
+type: theme
+description: 'A classic theme.'
+core: 8.x
+libraries:
+  - classic/global-css
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/algin.module.css
+
+regions:
+  content: 'Main Content'
+  header: 'Header'
+  footer: 'Footer'
+  sidebar: 'Sidebar'
+  main_navigation: 'Main Navigation'
+  latest_movies: 'Latest Movies'

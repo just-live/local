@@ -1,0 +1,28 @@
+
+<div class="show-poster">{{ kint(content.field_show_poster['#items'].getVlaue())}}
+ {% if content.field_show_poster['#items'].getValue()|first.value
+    == "1"%}
+    <div class="movie-poster">
+        {{content.field_movie_poster}}
+    </div>
+    {% else%}
+    <h3>Poster is hidden</h3>
+    {% endif%}
+</div>
+
+<div class="director">
+    {{content.field_director}}
+</div>
+<br>
+<div class="actors">
+    {{content.field_actors }}
+</div>
+<br>
+<br>
+<div class="premieres">
+    {{content.field_premeires}}
+</div>
+<br>
+<div class="movie-description">
+    {{content.body}}
+</div>

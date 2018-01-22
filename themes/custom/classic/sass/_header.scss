@@ -1,0 +1,40 @@
+.main-header{
+    background:url(../images/header1.jpg) no-repeat center center;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    margin-top: none;
+
+    
+}
+
+.logo{
+    @include span(2);
+    img{
+        max-width: 16%;
+        margin: 20px;
+    }
+}
+
+.main-navigation{
+    @include span(3 last);
+
+     li{
+        margin-top: 20px;
+         float: right;
+     }
+
+     a{
+         display: block;
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         padding: 0 10px;
+
+         &:hover{
+             text-decoration: underline;
+         }
+         
+
+     }
+     
+}
