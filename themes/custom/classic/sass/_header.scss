@@ -1,6 +1,6 @@
 .main-header{
     background:url(../images/header1.jpg) no-repeat center center;
-    height: 300px;
+    height: 100px;
     width: 100%;
     background-size: cover;
     margin-top: none;
@@ -13,6 +13,7 @@
     img{
         max-width: 16%;
         margin: 20px;
+        margin-left: 50px;
     }
 }
 
@@ -20,8 +21,9 @@
     @include span(3 last);
 
      li{
-        margin-top: 20px;
-         float: right;
+        margin-top: 30px;
+        float: right;
+        font-size: 18px;
      }
 
      a{

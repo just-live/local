@@ -1,5 +1,5 @@
-
-<div class="show-poster">{{ kint(content.field_show_poster['#items'].getVlaue())}}
+<div class="show-poster">
+{# {{ kint(content.field_show_poster['#items'].getVlaue())}} #}
  {% if content.field_show_poster['#items'].getValue()|first.value
     == "1"%}
     <div class="movie-poster">

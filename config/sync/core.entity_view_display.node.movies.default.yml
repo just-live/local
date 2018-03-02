@@ -1,0 +1,78 @@
+uuid: 5f0888a0-21b8-4db2-b5b7-283020a12442
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movies.body
+    - field.field.node.movies.field_actors
+    - field.field.node.movies.field_director
+    - field.field.node.movies.field_movie_poster
+    - field.field.node.movies.field_premeires
+    - field.field.node.movies.field_show_poster
+    - image.style.movie_poster
+    - node.type.movies
+  module:
+    - field_collection
+    - image
+    - text
+    - user
+id: node.movies.default
+targetEntityType: node
+bundle: movies
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actors:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_director:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_movie_poster:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: movie_poster
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_premeires:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+  field_show_poster:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

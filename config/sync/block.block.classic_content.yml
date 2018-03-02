@@ -1,0 +1,30 @@
+uuid: b7926651-0d40-4e15-9d38-6637611aa7cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - classic
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: classic_content
+theme: classic
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

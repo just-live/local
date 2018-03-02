@@ -1,0 +1,22 @@
+uuid: a8631487-ab47-444d-b555-f60225287c7b
+langcode: en
+status: true
+dependencies: {  }
+name: movie_poster
+label: movie_poster
+effects:
+  210e9b8c-8971-4b57-8a14-a79e9743eac3:
+    uuid: 210e9b8c-8971-4b57-8a14-a79e9743eac3
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      upscale: false
+  0d6cace7-9831-489a-94ac-2317bef7f024:
+    uuid: 0d6cace7-9831-489a-94ac-2317bef7f024
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 300
+      height: 200

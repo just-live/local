@@ -1,0 +1,30 @@
+uuid: 74b1fc28-3911-4fb2-a2d5-d3ecd104ae4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_premeires.field_country
+    - field.field.field_collection_item.field_premeires.field_date_of_premiere
+    - field_collection.field_collection.field_premeires
+  module:
+    - datetime
+id: field_collection_item.field_premeires.default
+targetEntityType: field_collection_item
+bundle: field_premeires
+mode: default
+content:
+  field_country:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_date_of_premiere:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

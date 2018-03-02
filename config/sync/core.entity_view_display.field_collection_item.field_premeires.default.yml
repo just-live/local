@@ -1,0 +1,33 @@
+uuid: 77a7c638-5c6a-4996-a7fc-807fd3d0800e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_premeires.field_country
+    - field.field.field_collection_item.field_premeires.field_date_of_premiere
+    - field_collection.field_collection.field_premeires
+  module:
+    - datetime
+id: field_collection_item.field_premeires.default
+targetEntityType: field_collection_item
+bundle: field_premeires
+mode: default
+content:
+  field_country:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_date_of_premiere:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

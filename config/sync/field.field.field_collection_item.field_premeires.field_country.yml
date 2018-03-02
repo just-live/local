@@ -1,0 +1,19 @@
+uuid: 7aec096e-954f-4ad5-b895-8b459dcb97f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_country
+    - field_collection.field_collection.field_premeires
+id: field_collection_item.field_premeires.field_country
+field_name: field_country
+entity_type: field_collection_item
+bundle: field_premeires
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

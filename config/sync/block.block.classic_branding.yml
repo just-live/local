@@ -1,0 +1,25 @@
+uuid: d19a9542-fe65-4b91-80c0-4adc1c5c4f38
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - classic
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: classic_branding
+theme: classic
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility: {  }

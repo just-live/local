@@ -1,0 +1,24 @@
+uuid: 3918e66b-8180-46ff-8451-bcf8df1d614c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.movies
+  module:
+    - views
+  theme:
+    - classic
+id: views_block__movies_block_1
+theme: classic
+region: latest_movies
+weight: -7
+provider: null
+plugin: 'views_block:movies-block_1'
+settings:
+  id: 'views_block:movies-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '5'
+visibility: {  }
